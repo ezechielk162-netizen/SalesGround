@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     './assets/css/main.css'
   ],
   modules: [
-    '@nuxt/fonts',
     '@pinia/nuxt',
     '@nuxtjs/i18n',
     '@ant-design-vue/nuxt'
