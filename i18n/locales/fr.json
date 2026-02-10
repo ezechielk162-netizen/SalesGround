@@ -1,10 +1,8 @@
 {
   "nav": {
-    "home": "Accueil",
-    "follow": "Suivez Jésus",
-    "ask": "Demande de prière",
-    "give": "Donner",
-    "seemore": "À propos"
+    "home": "Terrain",
+    "videos": "Vidéos",
+    "seemore": "Contact"
   },
   "footer": {
     "legal": "Legal"
