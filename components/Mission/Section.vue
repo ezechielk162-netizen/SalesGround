@@ -7,6 +7,12 @@
     <div class="pt-0 subtitle">
       <p>{{ t(`${props.subtitle}`) }}</p>
     </div>
+
+    <perso-div :padding-value="4" class="text-center pt-3" v-if="addButton" ->
+      <a-button size="large" class="outline-slide-team"
+        ><MessageOutlined class="fix-icon-whatsapp" /> Demande prière</a-button
+      >
+    </perso-div>
   </div>
 </template>
 
@@ -21,6 +27,9 @@ const props = defineProps({
   subtitle: {
     type: String,
   },
+  addButton: {
+    type: Boolean
+  }
 });
 
 const isVisible = ref(false);
