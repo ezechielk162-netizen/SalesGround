@@ -112,6 +112,11 @@
 import { randomImage, goals, coords } from "~/core/constant";
 
 const { t } = useI18n();
+
+definePageMeta({
+  layout: "perso"
+})
+
 </script>
 
 <style scoped>
