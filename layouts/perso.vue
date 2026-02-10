@@ -13,7 +13,7 @@
           <div class="logo-icon">
           <img src="/assets/img/logo.png" style="width: 70px"/>
           </div>
-          <strong>Tabernacle of Hallel</strong>
+          <strong class="title-size">Tabernacle of Hallel</strong>
         </NuxtLink>
 
         <!-- TOGGLER MOBILE -->
@@ -31,7 +31,7 @@
           ]"
           id="navbarNav"
         >
-          <ul :class="isOpen ? 'navbar-nav gap-2' : 'navbar-nav gap-4'">
+          <ul :class="isOpen ? 'navbar-nav gap-2 pt-3' : 'navbar-nav gap-4'">
             <li
               v-for="item in menuItems"
               :key="item.name"
@@ -277,4 +277,12 @@ body.dark-mode .nav-link {
   border-radius: 2px;
   transition: width 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  .title-size
+  {
+    font-size: 17px !important;
+  }
+}
+
 </style>
