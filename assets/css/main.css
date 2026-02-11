@@ -60,6 +60,31 @@
     font-size: 15px;
 }
 
+.fix-icon-terrain {
+    position: relative;
+    top: -2px;
+    font-size: 15px;
+}
+
+.outline-slide-team {
+    background: linear-gradient(135deg, var(--campus-blue), var(--campus-blue-light));
+    color: white;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    border: none;
+    font-weight: 600;
+    border-radius: 99px !important;
+    height: 100% !important;
+    padding: 12px 35px !important;
+    font-size: 1rem;
+    font-family: var(--font-display) !important;
+  }
+  
+  .outline-slide-team:hover {
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.7);
+  }
+  
+
 .fix-icon-contact {
     position: relative;
     top: -4px;

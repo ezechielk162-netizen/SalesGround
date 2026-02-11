@@ -12,8 +12,18 @@
     "activate_ticket": "Activate a ticket"
   },
   "body": {
-    "presentation": {
-      "who": "Who are we ?"
+    "organization": {
+      "solution": "The #1 platform to find and sell land.",
+      "links": "Quick Links",
+      "first": "Our Lands",
+      "advantage": "Our achievements",
+      "how_choice": "Contact",
+      "contact": "Contact",
+      "position": "Abidjan, Ivory Coast",
+      "sign": "2024 TerrainVente. All rights reserved.",
+      "presentation": {
+        "who": "Who are we ?"
+      }
     }
   }
 }

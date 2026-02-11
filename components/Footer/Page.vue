@@ -4,50 +4,47 @@
       <NuxtPage />
     </div>
 
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-column footer-start">
-            <h3>{{ t('body.organization_name') }}</h3>
-            <p>{{ t('body.solution') }}</p>
+            <h3>
+              <EnvironmentFilled class="fix-icon-contact fs-6 mx-1" />
+              {{ t("body.organization.name") }}
+            </h3>
+            <p>{{ t("body.organization.solution") }}</p>
           </div>
 
           <div class="footer-column footer-end">
-            <h3>{{ t('body.links') }}</h3>
+            <h3>{{ t("body.organization.links") }}</h3>
             <ul class="footer-links">
-              <li><a href="#presentation">{{ t('body.first') }}</a></li>
-              <li><a href="#advantages">{{ t('body.advantage') }}</a></li>
-              <li><a href="#how_coice">{{ t('body.how_choice') }}</a></li>
-              <li><a href="#first_step">{{ t('body.first_step') }}</a></li>
-              <li><a href="#avis">{{ t('body.avis') }}</a></li>
+              <li>
+                <a href="#terrain">{{ t("body.organization.first") }}</a>
+              </li>
+              <li>
+                <a href="#realisation">{{ t("body.organization.advantage") }}</a>
+              </li>
+              <li>
+                <a href="#">{{ t("body.organization.how_choice") }}</a>
+              </li>
             </ul>
           </div>
 
           <div class="footer-column footer-end">
-            <h3>{{ t('body.links') }}</h3>
+            <h3>{{ t("body.organization.contact") }}</h3>
             <ul class="footer-links">
-              <li><a href="#presentation">{{ t('body.first') }}</a></li>
-              <li><a href="#advantages">{{ t('body.advantage') }}</a></li>
-              <li><a href="#how_coice">{{ t('body.how_choice') }}</a></li>
-              <li><a href="#first_step">{{ t('body.first_step') }}</a></li>
-              <li><a href="#avis">{{ t('body.avis') }}</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column footer-end">
-            <h3>{{ t('body.links') }}</h3>
-            <ul class="footer-links">
-              <li><a href="#presentation">{{ t('body.first') }}</a></li>
-              <li><a href="#advantages">{{ t('body.advantage') }}</a></li>
-              <li><a href="#how_coice">{{ t('body.how_choice') }}</a></li>
-              <li><a href="#first_step">{{ t('body.first_step') }}</a></li>
-              <li><a href="#avis">{{ t('body.avis') }}</a></li>
+              <li>
+                {{ t("body.organization.position") }}
+              </li>
+              <li>
+                {{ "contact@terrainvente.com" }}
+              </li>
             </ul>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <p>© {{ t('body.sign') }}</p>
+          <p>© {{ t("body.organization.sign") }}</p>
         </div>
       </div>
     </footer>
@@ -77,7 +74,7 @@ const { t } = useI18n();
   color: #ecf0f1;
   padding: 4rem 1rem 2rem;
   font-size: 0.95rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .site-footer .container {
@@ -143,7 +140,7 @@ const { t } = useI18n();
     align-items: center;
     text-align: center;
   }
-  
+
   .footer-links a:hover {
     transform: none;
     padding-left: 0;

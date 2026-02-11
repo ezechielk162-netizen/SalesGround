@@ -6,6 +6,14 @@ export default class FormService {
         email: "",
     })
 
+    static filters = reactive({
+        search: "",
+        city: "",
+        priceRange: "",
+        surface: "",
+        status: "",
+      });
+
     static clearForm(form: any) {
         Object.keys(form).forEach((key) => {
             if (

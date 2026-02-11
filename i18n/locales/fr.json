@@ -11,6 +11,17 @@
     "activate_ticket": "Activer un ticket"
   },
   "body": {
+    "organization": {
+      "name": "TerrainVente",
+      "solution": "La plateforme n°1 pour trouver et vendre des terrains.",
+      "links": "Liens rapides",
+      "first": "Nos Terrains",
+      "advantage": "Nos Réalisations",
+      "how_choice": "Contact",
+      "contact": "Contacts",
+      "position": "Abidjan, Côte d'Ivoire",
+      "sign": "2024 TerrainVente. Tous droits réservés."
+    },
     "presentation": {
       "who": "Qui sommes-nous ?"
     }

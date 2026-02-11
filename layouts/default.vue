@@ -1,40 +1,45 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg custom-navbar">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <NuxtLink to="/" class="navbar-brand d-flex align-items-center gap-2">
-          <EnvironmentFilled class="fix-icon fs-5" />
-          <strong>TerrainVente</strong>
-        </NuxtLink>
-
-        <!-- Burger -->
-        <a-button
-          class="navbar-toggler menu-color"
-          :class="{ rotated: isOpen }"
-          @click="toggleMenu"
-        >
-          <MenuOutlined />
-        </a-button>
-
-        <!-- Menu -->
-        <div class="navbar-collapse animated-collapse" :class="{ show: isOpen }">
-          <ul class="navbar-nav ms-auto">
-            <li v-for="(item, index) in menuItems" :key="index" class="nav-item">
-              <NuxtLink to="/terrains" class="nav-link" @click="closeMenu">
-                <component :is="item.icon" class="fix-icon-contact" />
-                {{ t(item.name) }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div v-if="isReady">
-      <ChangerLanguage />
-    </div>
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <NuxtLink to="/" class="navbar-brand d-flex align-items-center gap-2">
+            <EnvironmentFilled class="fix-icon fs-5" />
+            <strong>TerrainVente</strong>
+          </NuxtLink>
 
-    <FooterPage />
+          <!-- Burger -->
+          <a-button
+            class="navbar-toggler menu-color"
+            :class="{ rotated: isOpen }"
+            @click="toggleMenu"
+          >
+            <MenuOutlined />
+          </a-button>
+
+          <!-- Menu -->
+          <div class="navbar-collapse animated-collapse" :class="{ show: isOpen }">
+            <ul class="navbar-nav ms-auto">
+              <li v-for="(item, index) in menuItems" :key="index" class="nav-item">
+                <NuxtLink :to="item.to" class="nav-link" @click="closeMenu">
+                  <component :is="item.icon" class="fix-icon-contact" />
+                  {{ t(item.name) }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div v-if="isReady">
+        <ChangerLanguage />
+      </div>
+
+      <FooterPage />
+    </div>
+    <div v-else>
+      <AppLoaderLoad />
+    </div>
   </div>
 </template>
 
@@ -80,7 +85,6 @@ onUnmounted(() => {
   font-weight: 500;
 }
 
-
 .nav-link {
   margin-left: 5px;
 }
@@ -89,7 +93,6 @@ onUnmounted(() => {
   background-color: rgba(255, 255, 255, 0.141);
   border-radius: 7px;
 }
-
 
 /* Burger */
 .navbar-toggler {
@@ -132,9 +135,9 @@ onUnmounted(() => {
   }
 
   .nav-link {
-  margin-top: 5px;
-  padding-left: 20px;
-}
+    margin-top: 5px;
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 1024px) {
